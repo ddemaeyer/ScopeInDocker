@@ -2,8 +2,8 @@
 
 To build:
 
-	git clone <this_repo>
-	cd <dir>
+	git clone https://github.com/data-intuitive/ScopeInDocker
+	cd ScopeInDocker
 	docker build -t scope .
 
 To run:
