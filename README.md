@@ -1,5 +1,7 @@
 # SCope in Docker
 
+Sandbox for testing Docker instances of [SCope](https://github.com/aertslab/SCope).
+
 ## Building
 
 To build:
