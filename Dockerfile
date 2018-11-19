@@ -43,11 +43,14 @@ RUN cd /app/opt && \
     python setup.py develop && \
     cd ..
 
-EXPOSE 55850
-EXPOSE 55852
-
+EXPOSE 55850  # Frontend
+EXPOSE 55851  # Data upload
+EXPOSE 55852  # Backend
 
 WORKDIR /app
+
+# The frontend fails if this directory does not exist
+RUN mkdir /app/assets/
 
 # COPY . /app
 ENTRYPOINT ["npm", "run", "scope"]
