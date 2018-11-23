@@ -20,8 +20,8 @@ To run:
 
 To run the server:
 
-	docker run -d -t -p 55851:55851 -p 55852:55852 --entrypoint scope-server dockerscope
+	docker run -d -t -p 55851:55851 -p 55852:55852 --entrypoint scope-server scope
 
 To run the frontend:
 
-	docker run -d -t -p 55850:55850 --entrypoint 'npm' dockerscope run dev
+	docker run -d -t -p 55850:55850 --entrypoint 'npm' scope run dev
